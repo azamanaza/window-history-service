@@ -1,10 +1,10 @@
-export interface QueryParam {
+export interface QueryParams {
   [key: string]: string | number;
 }
 
 export class WindowHistoryService {
 
-  private queryParams: QueryParam = {};
+  private queryParams: QueryParams = {};
 
   constructor() {
     this.init();
@@ -36,19 +36,19 @@ export class WindowHistoryService {
     return this;
   }
 
-  setQueryParam(key: string, val: string) {
+  setQueryParam(key: string, val: string | number) {
     this.queryParams[key] = val;
     
     return this;
   }
 
-  setQueryParams(params: QueryParam) {
+  setQueryParams(params: QueryParams) {
     this.queryParams = params;
 
     return this;
   }
 
-  updateQueryParams(params: QueryParam) {
+  updateQueryParams(params: QueryParams) {
     this.queryParams = {
       ...this.queryParams,
       ...params
@@ -68,7 +68,7 @@ export class WindowHistoryService {
     return `${origin}${pathname}?${queryStringParams}`
   }
 
-  getUrl(): string {
+  getPath(): string {
     return document.location.pathname;
   }
 }
