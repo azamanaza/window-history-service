@@ -1,5 +1,5 @@
 {
-  "name": "@azamanaza/az-window-history-service",
+  "name": "@azamanaza/window-history-service",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
