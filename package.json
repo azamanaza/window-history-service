@@ -1,14 +1,22 @@
 {
   "name": "@azamanaza/window-history-service",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azamanaza/window-history-service"
+  },
+  "bugs": {
+    "url": "https://github.com/azamanaza/window-history-service"
+  },
+  "homepage": "https://github.com/azamanaza/window-history-service",
+  "keywords": ["javascript", "typescript", "window history"],
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Miguel Felipe Calo<miguelc0611@yahoo.com>",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^4.2.4"
