@@ -1,5 +1,8 @@
 # @azamanaza/window-history-service
 
+## Description
+A small service that wraps the window.history object and provides convenience for manipuating the url history without triggering redirection.
+
 ## Setup
 Run `npm i @azamanaza/window-history-service`
 
